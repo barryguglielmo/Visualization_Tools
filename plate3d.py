@@ -57,10 +57,16 @@ def plate_3d(dataframe, graph_id, save_path, show = True):
         plt.show()
     plt.close()
 
-###Example Use
+#####Example Use
 ##import os
 ##path = 'E:/Bo/DATA'
 ##os.chdir(path)
 ##runs = os.listdir()
-##data = plate_data(runs[0], 3, 80, 88, 1, 13)
-##plate_3d(data, 'zzzAI', path)
+##go = True
+##while go == True:
+##    #____________________________________________________#
+##    run_number = input('Enter Run Number: ')
+##    protein = input('Enter Protein of Interest: ')
+##    #____________________________________________________#
+##    data = plate_data(runs[int(run_number)-1], protein , 80, 88, 1, 13)
+##    plate_3d(data, str(protein)+'-Run ' +str(run_number), path)
